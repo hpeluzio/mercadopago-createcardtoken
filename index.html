@@ -13,16 +13,6 @@
           "TEST-5cfa7891-ec91-488e-9f6a-a27cf73ddec6"
         );
 
-        // console.log("Oi");
-        // console.log(mp);
-
-        // const a = await mp.getPaymentMethods({
-        //   bin: "4509953566233704",
-        // });
-
-        // console.log("getPaymentMethod: ", a);
-        // console.log("getPaymentMethod: ", a.results[0].id);
-
         const token = await mp.createCardToken({
           cardNumber: "4509953566233704",
           cardholderName: "APRO",
@@ -36,8 +26,6 @@
         console.log("Token: ", token);
 
         alert(token.id);
-
-        // window.ReactNativeWebView.postMessage(JSON.stringify(token));
       };
 
       createToken();
