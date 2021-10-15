@@ -16,11 +16,11 @@
         const token = await mp.createCardToken({
           cardNumber: "5031755734530604",
           cardholderName: "APRO",
-          identificationType: "CPF",
-          identificationNumber: "83535924014",
-          securityCode: "123",
           cardExpirationMonth: "11",
           cardExpirationYear: "2025",
+          securityCode: "123",
+          identificationType: "CPF",
+          identificationNumber: "83535924014",
         });
 
         console.log("Token: ", token);
